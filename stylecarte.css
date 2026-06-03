@@ -1,0 +1,192 @@
+body {
+   background-color: rgb(8 16 24)
+}
+
+.navbar {
+    background-color: rgb(4, 24, 56);
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    height: 38px;
+    
+    
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.logo { 
+    width: 50px;
+    height: 50px;
+
+}
+
+.titleNav{
+    color: aliceblue;
+    font-family:'Times New Roman', Times, serif
+
+
+}
+
+.nav_lien {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px;
+    color: aliceblue;
+    text-underline-offset: 8px;
+    
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.parent{
+    text-align: center;
+    color: aliceblue;
+} 
+
+.police {  
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+} 
+
+.lien { 
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block; 
+    border: 1px solid white;
+    padding: 10px 20px; 
+    transition: 0.3s;
+}
+
+.lien:hover {
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+.ligne {
+    background-color: white;
+}
+
+.cartes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+    width:60%;
+    margin: 70px auto;
+}
+
+.carte {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    text-align: center;
+    min-height: 100px;
+    transition: 0.3s;
+}
+
+.carte:hover {
+    transform: scale(1.05);
+    
+}
+
+.image {
+    width: 60px; 
+}
+
+hr {
+    width: 45px;
+    height: 1px;
+    background-color: rgb(6, 20, 90);
+}
+
+
+footer {
+    background-color: rgb(4 24 56);
+    text-align: center; 
+    color: white;
+    padding: 60px 20px;
+}
+
+footer p {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 24px;
+}
+
+.fa-instagram {
+    font-size: 40px;
+    color: white; 
+    transition: 0.3s;
+} 
+
+.fa-instagram:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+
+    
+    .cartes {
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .carte {
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    
+    .titleNav h1 {
+        font-size: 20px;
+    }
+
+ 
+    .logo {
+        width: 35px;
+        height: 35px;
+    }
+
+    .parent {
+        padding: 0 15px;
+    }
+
+    
+    .lien {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    
+    .image {
+        width: 50px;
+    }
+}
+

@@ -1,40 +1,192 @@
-.photo {
-    width: 30%;
-    height: auto;
-}
-
 .navbar {
-    background-color: rgb(16, 16, 94);
-    display: flex; 
+    background-color: rgb(4, 24, 56);
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 5px 10px;
+    height: 38px;
+
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+
+}
+
+.nav_lien {
+    display: flex;
+    gap: 15px;
 }
 
 .navbar a {
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
     padding: 15px;
     color: aliceblue;
+    text-underline-offset: 8px;
 }
 
-.navbar a {
-    color: aliceblue;
-    text-decoration: none;
-    font-size: 25px;
+a:hover {
+    text-decoration: underline;
+    color: #fff;
+
 }
 
 .titleNav {
     color: aliceblue;
-}
-
-.titleNav h1 {
     margin: 0;
-    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif
 }
 
-.body {
+.big-image {
+    background-color: rgb(8 16 24);
+
+}
+
+.big-image .photo {
+    width: 60%;
+    height: 55%;
+    display: block;
+    margin: auto;
+
+}
+
+.centre .cadre {
+    background-color: white;
+    border: 2px solid rgb(5, 8, 34);
+
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    width: 40%;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 3%;
+    margin-right: 0;
+    transform: translateX(20px);
+}
+
+.centre {
     display: flex;
     justify-content: space-between;
-    align-items: 30px;
+    align-items: center;
+    gap: 25px;
+    margin-top: 10px;
+}
+
+.photo-texte {
+    width: 50%;
+    border-radius: 4%;
+    margin-top: 10px;
+}
+
+h2 {
+    margin-left: 0px;
+    margin-top: 0;
+}
+
+.ligne {
+    width: 50px;
+    height: 2px;
+    background-color: rgb(26, 54, 101);
+    margin-left: 5px;
+}
+
+.texte {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.montagne {
+    transform: translateX(-40px);
+}
+
+
+footer {
+    background-color: rgb(4 24 56);
+    text-align: center;
+    color: white;
+    padding: 60px 20px;
+}
+
+footer p {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 24px;
+}
+
+.fa-instagram {
+    font-size: 40px;
+    color: white;
+    transition: 0.3s;
+}
+
+.fa-instagram:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .big-image .photo {
+        width: 90%;
+        height: auto;
+    }
+
+    .centre {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .centre .cadre {
+        width: 90%;
+        flex-direction: column;
+        transform: none;
+        margin: 0;
+        padding: 15px;
+    }
+
+    .photo-texte {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .montagne {
+        transform: none;
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    footer {
+        padding: 40px 15px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
 }

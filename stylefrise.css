@@ -1,0 +1,191 @@
+body {
+    background-color: rgb(8 16 24)
+}
+
+.navbar {
+    background-color: rgb(4, 24, 56);
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    height: 38px;
+
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.logo { 
+    width: 50px;
+    height: 50px;
+
+}
+
+.nav_lien {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px;
+    color: aliceblue;
+    text-underline-offset: 8px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #fff;
+    
+}
+
+.titleNav {
+    color: aliceblue;
+    margin: 0;
+    font-family:'Times New Roman', Times, serif
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.photo-frise {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.timeline {
+    width: 70%;
+    margin: 50px auto;
+    position: relative;
+    border-left: 3px solid white;
+    padding-left: 40px; 
+    
+} 
+
+.event {
+    background: rgb(250, 252, 255);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    width: 60%;
+}
+
+.event::before {
+    content: "";
+    position: absolute;
+    left: -47px; 
+    top: 22px;
+
+    width: 14px;
+    height: 14px;
+    background: rgb(86, 182, 218);
+    border-radius: 50%;
+}
+
+h3 {
+    font-size: 30px;
+
+}
+
+.titre {
+    font-size: 25px;
+}
+
+.texte {
+    font-size: 20px;
+  
+}
+
+footer {
+    background-color: rgb(4 24 56);
+    text-align: center; 
+    color: white;
+    padding: 60px 20px;
+    
+}
+
+footer p {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 24px;
+}
+
+.fa-instagram {
+    font-size: 40px;
+    color: white; 
+    transition: 0.3s;
+} 
+
+.fa-instagram:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+
+  
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .nav_lien {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .navbar a {
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+        .timeline {
+        width: 95%;
+        padding-left: 20px;
+    }
+
+    .event {
+        width: 100%;
+    }
+
+    .photo-frise {
+        width: 100%;
+        height: auto;
+    }
+
+   
+    .titre {
+        font-size: 18px;
+    }
+
+    .texte {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    
+    footer p {
+        font-size: 18px;
+    }
+}
