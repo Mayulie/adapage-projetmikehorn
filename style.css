@@ -115,13 +115,28 @@ footer {
     background-color: rgb(4 24 56);
     text-align: center;
     color: white;
-    padding: 60px 20px;
+    padding: 15px 20px;
 }
 
 footer p {
     font-family: "Cormorant Garamond", serif;
     font-style: italic;
     font-size: 24px;
+}
+
+.lien {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    border: 1px solid white;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.lien:hover {
+    transform: scale(1.05);
+    text-decoration: none;
 }
 
 .fa-instagram {
@@ -132,7 +147,10 @@ footer p {
 
 .fa-instagram:hover {
     transform: scale(1.05);
+    
 }
+
+
 
 @media (max-width: 768px) {
 
@@ -184,6 +202,7 @@ footer p {
 
     footer {
         padding: 40px 15px;
+
     }
 
     footer p {

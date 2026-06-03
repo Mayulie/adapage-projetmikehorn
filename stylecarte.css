@@ -114,12 +114,11 @@ hr {
     background-color: rgb(6, 20, 90);
 }
 
-
 footer {
     background-color: rgb(4 24 56);
     text-align: center; 
     color: white;
-    padding: 60px 20px;
+    padding: 15px 20px;
 }
 
 footer p {
